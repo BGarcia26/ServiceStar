@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Star - Soluciones Informáticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">⭐ Service Star</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="servicios.html">Servicios TIC</a></li>
+            <li><a href="hardware.html">Equipos y Licencias</a></li>
+            <li><a href="tienda.html">Tienda de Equipos</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Expertos en Proyectos de Tecnologías de la Información</h1>
+            <p>Nuestra empresa nace el año 2016, formada por profesionales TI con 18 años de experiencia en el rubro.</p>
+            <a href="#pilares" class="btn-primary">Conoce Nuestros Pilares</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="pilares" class="seccion-destacados">
+            <h2>Nuestra Filosofía Corporativa</h2>
+            <div class="grid-tarjetas">
+                <div class="tarjeta">
+                    <h3>🎯 Misión</h3>
+                    <p>Ser partners especializados que integramos soluciones TIC a nuestros clientes en sus objetivos estratégicos dentro de los proyectos corporativos.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>👁️ Visión</h3>
+                    <p>Consolidar soluciones TI de alto nivel empresarial en la arquitectura de todos nuestros clientes, permitiendo un progreso e innovación tecnológica.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+        <section id="contacto" class="seccion-contacto">
+            <h2>Trabajemos Juntos</h2>
+            <p>Contáctanos para optimizar tus procesos y mejorar la competitividad de tu empresa.</p>
+            
+            <div class="contacto-grid">
+                <!-- Formulario -->
+                <form id="form-contacto" action="https://formsubmit.co/mgarcia@itdata.cl" method="POST" class="formulario-corporativo" novalidate>
+                    <input type="hidden" name="_subject" value="Nuevo requerimiento web ITDATA">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="grupo-form">
+                        <label for="nombre">Nombre o Empresa:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez - Empresa S.A." autocomplete="name">
+                        <span class="error-msg" id="error-nombre"></span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="correo">Correo Corporativo:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="contacto@tuempresa.cl" autocomplete="email">
+                        <span class="error-msg" id="error-correo"></span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" autocomplete="tel">
+                        <span class="error-msg" id="error-telefono"></span>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="mensaje">Requerimiento:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Detalla aquí tu necesidad..."></textarea>
+                        <span class="error-msg" id="error-mensaje"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+                <script src="script.js"></script>
+
+                <!-- Mapa de Google Maps -->
+                <div class="mapa-container">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3596332358366!2d-70.65569962273985!3d-33.43993577339376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a43c311187%3A0xb4d8ce96714b4844!2sHu%C3%A9rfanos%201160%2C%20Ofi%201102%2C%208340420%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1788799006996!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2026 Service Star. Dirección: Huérfanos 1160 Of. 1102, Santiago.</p>
+    </footer>
+</body>
+</html>
